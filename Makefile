@@ -14,6 +14,9 @@ all: install
 install:
 	pip install -e .
 
+linters:
+	echo "PLACEHOLDER"
+
 flake8:
 	cd ..; flake8 --max-line-length 124 --ignore=E722 $(package)/$(package)
 	cd ..; flake8 --max-line-length 124 --ignore=E722 $(package)/tests
